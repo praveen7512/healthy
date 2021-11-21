@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "854068248496",
+    "firebase_url": "https://healthit-e8740-default-rtdb.firebaseio.com",
+    "project_id": "healthit-e8740",
+    "storage_bucket": "healthit-e8740.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:854068248496:android:780e8d953122ba9c2ae075",
+        "android_client_info": {
+          "package_name": "com.example.healthit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "854068248496-jcirhgt1odlbjvn7fg7e7puiehtnr44m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDomKlypnxLP8l02ZIdAoQlW7VCzcpZtMA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "854068248496-jcirhgt1odlbjvn7fg7e7puiehtnr44m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".UserProfile">
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:textColor="#31A5A4"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/profile_pic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/name_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/edit_name"
+        app:layout_constraintTop_toBottomOf="@+id/imageview" />
+
+    <TextView
+        android:id="@+id/age_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Age"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/edit_name"
+        app:layout_constraintTop_toBottomOf="@+id/edit_name" />
+
+
+    <EditText
+        android:id="@+id/age_spin"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded_textbox"
+        app:layout_constraintBottom_toBottomOf="@+id/age_txt"
+        app:layout_constraintStart_toEndOf="@+id/age_txt"
+        app:layout_constraintTop_toTopOf="@+id/age_txt" />
+
+<!--    <Spinner-->
+<!--        android:id="@+id/age_spin"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:background="@drawable/rounded_textbox"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/age_txt"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/age_txt"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/age_txt" />-->
+
+    <TextView
+        android:id="@+id/gender_txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender M/F"
+        android:layout_marginLeft="45dp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@+id/age_spin"
+        app:layout_constraintStart_toEndOf="@+id/age_spin"
+        app:layout_constraintTop_toTopOf="@+id/age_spin" />
+
+    <EditText
+        android:id="@+id/gender_spin"
+        android:layout_width="50dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:padding="10dp"
+        android:background="@drawable/rounded_textbox"
+        app:layout_constraintBottom_toBottomOf="@+id/gender_txt"
+        app:layout_constraintStart_toEndOf="@+id/gender_txt"
+        app:layout_constraintTop_toTopOf="@+id/gender_txt" />
+
+<!--    <Spinner-->
+<!--        android:id="@+id/gender_spin"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:background="@drawable/rounded_textbox"-->
+<!--        app:layout_constraintBottom_toBottomOf="@+id/gender_txt"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/gender_txt"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/gender_txt" />-->
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/rounded_textbox"
+        android:padding="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/name_txt" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:layout_marginTop="35dp"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        app:layout_constraintStart_toStartOf="@+id/edit_email"
+        app:layout_constraintTop_toBottomOf="@+id/age_spin" />
+
+    <TextView
+        android:id="@+id/edit_email"
+        android:layout_width="360dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:text="komal@gmail.com"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="Password"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="22sp"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/edit_email"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/edit_email" />-->
+
+
+<!--    <EditText-->
+<!--        android:id="@+id/editText2"-->
+<!--        android:layout_width="360dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:padding="15dp"-->
+<!--        android:background="@drawable/rounded_textbox"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView2" />-->
+
+    <Button
+        android:id="@+id/logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/rounded_buttons"
+        android:padding="10dp"
+        android:text="Log Out"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/update_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="40dp"
+        android:background="@drawable/rounded_buttons"
+        android:padding="10dp"
+        android:text="Update"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
